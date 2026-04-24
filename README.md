@@ -1,57 +1,48 @@
-# Zabbix Monitoring Modul – lesson_gauge_chart
+# Zabbix Monitoring Dashboard Widget – Gauge Chart Extension
 
-Dieses Projekt ist ein **benutzerdefiniertes Zabbix-Widget-Modul**, das Monitoring-Daten sowohl als **Gauge-Diagramm (Tacho-Anzeige)** als auch als **numerischen Wert (Zahl)** darstellt.
+Dieses Projekt erweitert die Zabbix Monitoring Plattform um ein individuelles Widget zur visuellen Darstellung von Systemmetriken in Echtzeit.
 
-Es wurde im Rahmen der Ausbildung zum Fachinformatiker für Anwendungsentwicklung entwickelt und dient zur Visualisierung von Zabbix-Metriken im Frontend.
+Das Widget wurde im Rahmen der Ausbildung zum Fachinformatiker für Anwendungsentwicklung (IHK) entwickelt.
+
+Es verbessert die Übersicht von Monitoring-Daten und ermöglicht eine schnellere visuelle Bewertung von Systemzuständen.
 
 ---
 
 ## 🚀 Funktionen
 
-- Eigenes Zabbix-Widget
+- Benutzerdefiniertes Zabbix-Widget
 - Darstellung von Monitoring-Daten als:
   - Gauge (Tacho / Kreisdiagramm)
-  - Numerischer Wert (Zahl)
+  - Numerischer Wert
 - Dynamische Datenabfrage aus dem Zabbix-Backend
-- Trennung von Backend (PHP) und Frontend (JS/CSS)
 - Konfigurierbares Widget-Formular
+- Trennung von Backend (PHP) und Frontend (JavaScript / CSS)
 
 ---
 
 ## 🧩 Projektstruktur
+
 lesson_gauge_chart/
-│
-├── actions/ # Backend-Logik
-│ └── WidgetView.php
-│
-├── assets/
-│ ├── css/ # Styles
-│ └── js/ # JavaScript Logik
-│
-├── includes/ # PHP Klassen (Formular & Logik)
-│ └── WidgetForm.php
-│
-├── views/ # Frontend Templates
-│ ├── widget.view.php
-│ ├── widget.edit.php
-│ └── widget.edit.js.php
-│
-├── Widget.php # Haupteinstiegspunkt
-├── manifest.json # Widget Metadaten
+├── actions/          Backend-Logik
+├── assets/           CSS & JavaScript
+├── includes/         PHP Klassen
+├── views/            UI Templates
+├── Widget.php        Einstiegspunkt
+├── manifest.json     Konfiguration
 └── README.md
 
 ---
 
 ## ⚙️ Installation
 
-1. Projekt in das Zabbix Frontend Modul-Verzeichnis kopieren  
-2. PHP Berechtigungen prüfen  
-3. Cache ggf. leeren  
-4. Widget im Zabbix Frontend aktivieren  
+- Modul in das Zabbix Frontend-Verzeichnis kopieren
+- Berechtigungen für PHP-Dateien prüfen
+- Cache von Zabbix leeren
+- Widget im Dashboard aktivieren
 
 ---
 
-## 🛠️ Verwendete Technologien
+## 🛠️ Technologien
 
 - PHP (Zabbix Frontend Entwicklung)
 - JavaScript (UI Logik)
@@ -62,18 +53,18 @@ lesson_gauge_chart/
 
 ## 🎯 Ziel des Projekts
 
-Ziel dieses Projekts ist die praktische Umsetzung eines Monitoring-Widgets zur Visualisierung von Systemdaten in Zabbix durch:
+Das Ziel ist die Entwicklung eines praxisnahen Monitoring-Widgets zur besseren Visualisierung von Systemdaten in Zabbix durch:
 
-- Gauge-Darstellung (visuell)
-- Numerische Darstellung (Zahl)
-- Frontend-Erweiterung von Zabbix
+- visuelle Gauge-Darstellung
+- numerische Darstellung
+- Erweiterung der Zabbix Frontend-Funktionalität
 
 ---
 
-## 👤 Autor
+## 👤 Entwickler
 
 Sareh Bahrani  
-Fachinformatikerin – Anwendungsentwicklung (IHK)
+Fachinformatiker Anwendungsentwicklung (IHK)
 
 ---
 
