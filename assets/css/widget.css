@@ -1,0 +1,53 @@
+.dashboard-widget-lesson_gauge_chart.dashboard-widget,
+.dashboard-widget-lesson_gauge_chart.dashboard-grid-widget {
+    background: rgba(36, 38, 46, 0.86) !important;
+    border-radius: 28px !important;
+    margin: 18px 8px !important;
+    box-shadow: 0 12px 32px 0 rgba(30,185,128,0.12), 0 2px 8px 0 rgba(0,0,0,0.14), 0 0 0 2px rgba(30,185,128,0.05);
+    border: 1.5px solid rgba(61,67,89,0.35) !important;
+    backdrop-filter: blur(6px);
+    transition: box-shadow 0.28s, border 0.2s;
+}
+.dashboard-widget-lesson_gauge_chart.dashboard-widget:hover {
+    box-shadow: 0 16px 42px 0 rgba(30,185,128,0.19), 0 4px 12px 0 rgba(0,0,0,0.18);
+    border: 1.5px solid #1EB980;
+}
+
+div.dashboard-widget-lesson_gauge_chart {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 210px;
+    background: transparent !important;
+    border-radius: 18px !important;
+    padding: 10px 6px 8px 6px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.dashboard-widget-lesson_gauge_chart .chart {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    min-height: 100px;
+}
+
+div.dashboard-widget-lesson_gauge_chart .chart canvas {
+    width: 98% !important;
+    height: 98% !important;
+    max-width: 360px;
+    max-height: 250px;
+    min-width: 120px;
+    min-height: 100px;
+    display: block;
+    margin: 0 auto;
+    background: transparent !important;
+    border-radius: 15px !important;
+    box-shadow: 0 2px 8px 0 rgba(30,185,128,0.11);
+}

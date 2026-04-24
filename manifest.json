@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2.0,
+    "id": "lesson_gauge_chart",
+    "type": "widget",
+    "name": "Gauge chart/Balken/Zahl",
+    "namespace": "LessonGaugeChart",
+    "version": "1.0",
+    "author": "Zabbix",
+    "actions": {
+        "widget.lesson_gauge_chart.view": {
+            "class": "WidgetView"
+        }
+    },
+    "widget": {
+        "js_class": "WidgetLessonGaugeChart",
+        "in": {
+            "itemid": { "type": "_itemid", "required": true },
+            "value_min": { "type": "string", "required": false },
+            "value_max": { "type": "string", "required": false },
+            "chart_color": { "type": "string", "required": false },
+            "value_units": { "type": "string", "required": false },
+            "value_static_units": { "type": "string", "required": false },
+            "description": { "type": "string", "required": false },
+            "display_type": { "type": "string", "required": false }
+        }
+    },
+    "assets": {
+        "css": ["widget.css"],
+        "js": ["class.widget.js"]
+    }
+}
