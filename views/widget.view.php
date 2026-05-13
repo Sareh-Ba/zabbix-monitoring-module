@@ -12,7 +12,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
 (new CWidgetView($data))
     ->addItem([
-        // Beschreibung (Description) — ??? ??? ???? ????? ??? ???
+        // Beschreibung (optional)
         (!empty($data['fields_values']['description']))
             ? (new CDiv(htmlspecialchars($data['fields_values']['description'], ENT_QUOTES, 'UTF-8')))
                 ->addClass('description')

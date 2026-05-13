@@ -169,7 +169,7 @@ if (typeof WidgetLessonGaugeChart === 'undefined') {
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillText(
-                this._value !== null ? this._value.toFixed(2) : '–',
+                this._value !== null ? this._value.toFixed(2) : '--',
                 centerX,
                 centerY - size * 0.05
             );
@@ -263,7 +263,7 @@ if (typeof WidgetLessonGaugeChart === 'undefined') {
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillText(
-                this._value !== null ? this._value.toFixed(2) : '–',
+                this._value !== null ? this._value.toFixed(2) : '--',
                 x + barWidth / 2,
                 y + barHeight / 2 - (size * 0.03)
             );
@@ -310,7 +310,7 @@ if (typeof WidgetLessonGaugeChart === 'undefined') {
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillText(
-                this._value !== null ? this._value.toFixed(2) : '–',
+                this._value !== null ? this._value.toFixed(2) : '--',
                 size / 2,
                 size / 2 - (size * 0.05)
             );
