@@ -13,31 +13,6 @@ window.widget_lesson_gauge_chart_form = new class {
 
         this._unit_select.addEventListener('change', () => this.updateForm());
 
-        colorPalette.setThemeColors(color_palette);
-
-        for (const colorpicker of jQuery('.<?= ZBX_STYLE_COLOR_PICKER ?> input')) {
-            jQuery(colorpicker).colorpicker();
-        }
-
-        const overlay = overlays_stack.getById('widget_properties');
-
-        for (const event of ['overlay.reload', 'overlay.close']) {
-            overlay.$dialogue[0].addEventListener(event, () => {
-                jQuery.colorpicker('hide');
-            });
-        }
-
-        // vor Submit Felder bereinigen
-        const form = document.querySelector('form');
-        form.addEventListener('submit', () => {
-            if (this._description) {
-                this._description.value = this._sanitizeUTF8(this._description.value);
-            }
-            if (this._unit_value) {
-                this._unit_value.value = this._sanitizeUTF8(this._unit_value.value);
-            }
-        });
-
         this.updateForm();
     }
 
